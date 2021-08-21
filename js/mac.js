@@ -70,7 +70,7 @@ function netPrice() {
 
     const lastTotal = document.getElementById('lastTotal');
     lastTotal.innerText = netCostPrice;
-    return netCostPrice;
+
 
 }
 //function of promocode 
@@ -82,7 +82,6 @@ document.getElementById('promo-btn').addEventListener('click', function () {
         const promoDiscount = promoOut.innerText * 20 / 100;
         promoOut.innerText = promoOut.innerText - promoDiscount;
     }
-
     document.getElementById("promo-btn").disabled = true;
     promoInput.value = "";
 })

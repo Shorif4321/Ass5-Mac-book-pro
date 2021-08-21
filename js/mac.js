@@ -73,7 +73,28 @@ function netPrice() {
 
 
 }
-//function of promocode 
+
+document.getElementById('promo-btn').addEventListener('click', function () {
+    promoCode()
+});
+
+function promoCode() {
+    const totalPrice = document.getElementById('total-price').innerText;
+    const promoCodeInput = document.getElementById('promo-Input');
+    const promoCode = promoCodeInput.value
+    const givenPromoCode = 'stevekaku';
+    if (promoCode == givenPromoCode) {
+        const discountPrice = parseFloat(totalPrice) * 20 / 100;
+        const totalDiscount = parseFloat(totalPrice) - discountPrice;
+        const updateTotal = document.getElementById('lastTotal');
+        updateTotal.innerText = totalDiscount;
+        promoCodeInput.value = '';
+    }
+};
+
+
+
+/* // of promocode
 document.getElementById('promo-btn').addEventListener('click', function () {
 
     const promoInput = document.getElementById('promo-Input');
@@ -84,4 +105,4 @@ document.getElementById('promo-btn').addEventListener('click', function () {
     }
     document.getElementById("promo-btn").disabled = true;
     promoInput.value = "";
-})
+}) */

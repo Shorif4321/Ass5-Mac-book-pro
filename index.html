@@ -5,19 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macbook-Pro Assignment</title>
+    <title>Mac Assignmet by Alis Shorif</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <head>
-
-    </head>
     <main>
-        <h1>Start Assignment</h1>
+        <section class="container">
+            <div class="row">
+                <div class="mt-5 col-12 col-md-6">
+                    <img class="img-fluid" src="images/mac.png" alt="">
+                </div>
+                <div class="mt-5 mb-5 col-12 col-md-6 text-center">
+                    <h2 id="shipon">customize your blue 24-inch <br>imac with apple <span class="custom-color"> m1
+                            chip</span>.
+                    </h2>
+                    <p>apple m1 chip with 8-core CPU with perpormance cores and 4efficiency cores, 7-core GPU ,and
+                        16core neural
+                        engine 8gb unified memory 256 SSD storage two thunderbolt / USB 4ports magic mouse keyboard- US
+                        English </p>
+
+                    <!-- configaretion section -->
+                    <h5 class="custom-color">Memory</h5>
+                    <button id="memory8" class="custom-button">8GB unified Memory</button>
+                    <button id="memory16" class="custom-button">16GB unified Memory</button>
+
+                    <h5 class="mt-5 custom-color">storage</h5>
+                    <button id="storage256" class="custom-button">256GB SSD storage</button>
+                    <button id="storage512" class="custom-button">512GB SSD storage</button>
+                    <button id="storage1tb" class="custom-button">1tb SSD storage</button>
+
+                    <!-- delivery section -->
+                    <h5 class="mt-5 custom-color">choose your delivery option</h5>
+                    <button class="custom-button" id="free-delivery">Friday, Aug 25 FREE prime Delivery</button>
+                    <button class="custom-button" id="delivery">Friday, Aug 21Delivery charge $20</button>
+
+                    <!-- price section -->
+                    <table class="table mt-5">
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold custom-color">Best Price</td>
+                                <td class="fw-bold custom-color">$<span id="best-price">1299</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold custom-color">Extra Memory Cost </td>
+                                <td class="fw-bold custom-color">$<span id="memory-cost">0</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold custom-color">Extra Storage Cost </td>
+                                <td class="fw-bold custom-color">$<span id="storage-cost">0</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold custom-color">Delivery Charge</td>
+                                <td class="fw-bold custom-color">$<span id="delivery-const">0</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold custom-color">Total Price</td>
+                                <td class="fw-bold custom-color">$<span id="total-price">1299</span> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- promo code section -->
+                    <h6 class="custom-color">Add promo code</h6>
+                    <input id="promo-input" class="p-1" type="text">
+                    <button id="promo-btn" class="btn btn-danger fw-bold">Apply</button>
+                    <h3 class="custom-color">Total Price: $<span id="lastTotal">1299</span> </h3>
+
+                </div>
+        </section>
     </main>
 
+    <!-- js -->
     <script src="js/mac.js"></script>
+    <!-- bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

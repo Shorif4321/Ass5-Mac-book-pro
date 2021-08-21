@@ -1,3 +1,4 @@
+
 //memory section
 const memory = document.getElementById('memory16');
 memory.addEventListener('click', function () {
@@ -72,23 +73,16 @@ function netPrice() {
     return netCostPrice;
 
 }
+//function of promocode 
+document.getElementById('promo-btn').addEventListener('click', function () {
 
-//promocode function
-cupponCode();
-function cupponCode() {
-    document.getElementById('promo-btn').addEventListener('click', function () {
-        const input = document.getElementById('promo-input').value;
-        console.log(input);
+    const promoInput = document.getElementById('promo-Input');
+    if (promoInput.value == "stevekaku") {
+        const promoOut = document.getElementById('lastTotal');
+        const promoDiscount = promoOut.innerText * 20 / 100;
+        promoOut.innerText = promoOut.innerText - promoDiscount;
+    }
 
-        if (input == 'stevekaku') {
-            const promoBonus = document.getElementById('lastTotal');
-            const BonusAmount = parseInt(promoBonus.innerText);
-            const finish = (BonusAmount) * 80 / 100;
-            promoBonus.innerText = finish;
-
-
-        }
-
-    })
-
-}
+    document.getElementById("promo-btn").disabled = true;
+    promoInput.value = "";
+})
